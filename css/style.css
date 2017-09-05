@@ -1,0 +1,236 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body {
+	background-color: #f1f1f1;
+}
+
+header {
+	width: 100%;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	background-color: lightgrey;
+}
+
+header .logo {
+	min-width: 61%;
+	position: absolute;
+	top: 46%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+	text-align: center;
+}
+
+header .logo h1 {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 99px;
+	color: white;
+	border: 2px dotted white;
+	padding: 20px;
+
+}
+
+.background	{
+	width: 100%;
+	height: 100%;
+	background: url(../images/forest.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+	transition: all 0.5s ease-out;
+}
+
+.background:hover {
+	filter: blur(5px);
+}
+
+header nav {
+	width: 100%;
+	height: 50px;
+	background: rgba(255,255,255, 0.5);
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	top: 60%;
+}
+
+header nav ul {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+
+
+header nav a li {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 25px;
+}
+
+.widgets {
+	width: 100%;
+	height: 20px;
+	background: black;
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.widgets ul {
+	position: absolute;
+	right: 20px;
+}
+
+.widgets ul a li {
+	display: inline-block;
+	border-right: 1px dashed green;	
+	padding: 0px 15px;
+}
+
+#none {
+	border: 0;
+}
+
+.widgets ul a {
+	color: green;
+	text-decoration: none;
+	font-family: "helvetica";
+	font-size: 12px;
+}
+
+/**************************/
+
+main {
+	width: 65%;
+	margin: 20px auto;
+}
+
+.left {
+	width: 59%;
+	padding: 10px;
+	float: left;
+}
+
+.right {
+	width: 39%;
+	padding: 10px;
+	float: left;
+}
+
+.gallery {
+	border: 1px solid #f9f5f5;
+	height: 325px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery img {
+	height: 100%;
+	width: 100%;
+}
+
+div[class*=description] {
+	color: white;
+	background: rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.description-bot {
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	bottom: 0;
+}
+
+.description-bot p {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 20px;
+}
+
+div.description-top {
+	width: 40%;
+	height: 20%;
+	position: absolute;
+	top: 30%;
+	background: rgba(9, 156, 50, 0.33);
+}
+
+.description-top h3 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 20px;
+}
+
+section {
+	width: 100%;
+	height: 300px;
+	background-color: lightgrey;
+	margin-top: 10px;
+}
+
+article {
+	margin-top: 15px;
+}
+
+aside {
+	width: 100%;
+	min-height: 300px; /*tentative*/
+	background-color: lightgrey;
+	margin-bottom: 25px;
+}
+
+footer {
+	width: 100%;
+	min-height: 400px; /*tentative*/
+	background-color: grey;
+	padding: 15px;
+	position: relative;
+	border-top: 8px solid green;
+}
+
+.sets-column {
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	position: relative;
+}
+
+footer > .sets-column .column {
+	background-color: lightgrey;
+	width: 33.33%;
+	height: 100%;
+	float: left;
+	/*margin: 0 0.6%;*/
+	border-right: 2px dashed white; /*try mo idikit*/
+}
+
+.pure-bottom {
+	width: 100%;
+	height: 20px;
+	background-color: black;
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	text-align: center;
+}
+
+.pure-bottom p {
+	color: white;
+}
