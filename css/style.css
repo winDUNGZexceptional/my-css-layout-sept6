@@ -65,12 +65,12 @@ header .logo h1 {
 
 header nav {
 	width: 100%;
-	height: 50px;
+	height: 35px;
 	background: rgba(255,255,255, 0.5);
 	position: absolute;
 	z-index: 1;
 	/*overflow: hidden;*/
-	top: 60%;
+	top: 64%;
 }
 
 header nav ul {
@@ -78,7 +78,7 @@ header nav ul {
 	top: 50%;
 	right: 50%;
 	transform: translate(50%, -50%);
-	width: 60%;
+	width: 57%;
 }
 
 
@@ -88,6 +88,11 @@ header nav a li {
 	color: #f4fcfb;
 	padding: 25px;
 	position: relative;
+	transition: all 0.5s;
+}
+
+header nav a li:hover {
+	color: #284951;
 }
 
 
@@ -270,6 +275,7 @@ section h2 {
 
 .share-post {
 	margin-top: 10px;
+	font-size: 13px;
 }
 
 .share-post ul li {
@@ -280,6 +286,11 @@ section h2 {
 .share-post ul a {
 	color: #549093; /*tentative*/
 	text-decoration: none;
+	transition: all 0.5;
+}
+
+.share-post ul a:hover {
+	color: #549093;
 }
 
 .share-post span {
